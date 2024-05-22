@@ -1,0 +1,6 @@
+Schema pada Elasticsearch sangatlah fleksibel, akan tetapi setelah kita mendefinisikan schema tersebut, kita tidak bisa mengubah attribute yang sudah jadi. Hanya dapat menambahkan attribute baru.
+
+Contoh :
+Schema index product sudah terbentuk dengan salah satu attribute adalah price dengan tipe data number. Maka attribute tersebut hanya dapat di isi oleh data dengan tipe number, tidak bisa di isi selain number (teks, boolean, dll).
+
+Berbeda dengan MongoDB yang sangat fleksibel attributenya. Bisa di isi dengan data apapun.

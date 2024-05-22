@@ -1,0 +1,5 @@
+Pada Elasticsearch, primary key wajib ditambahkan dengan menggunakan nama field _id.
+
+Selain itu primary key tidak bisa lebih dari 1 field atau attribute.
+
+Tipe data untuk primary key _id adalah string. Sehingga kita bebas memasukkan data apa saja didalam attribute tersebut, namun data tersebut tetap akan disimpan dalam bentuk string.

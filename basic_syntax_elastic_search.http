@@ -1,0 +1,2 @@
+### Create index customers
+PUT http://localhost:9200/customers
