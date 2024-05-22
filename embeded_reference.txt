@@ -1,0 +1,33 @@
+Embedded :
+Gunakan embedded jika dokumen saling ketergantungan.
+Contoh bentuk data Embedded : 
+{
+    "name": "Morpheus",
+    "job": "Leader",
+    "id": "199",
+    "createdAt": "2020-02-20T11:00:28.107Z"
+    "contactdetails": {
+        "phone”:”8439743294793",
+        "email":"test@abc.com"
+    }
+}
+
+Reference : 
+Gunakan Reference jika data bisa berdiri sendiri dan tidak terlalu ketergantungan satu sama lain.
+
+Contoh bentuk data Reference :
+index users :
+{
+    "id": "1",
+    "name": "Morpheus",
+    "job": "Leader",
+    "id": "199",
+    "createdAt": "2020-02-20T11:00:28.107Z"
+}
+
+index contacts : 
+{
+    "user_id":"1",
+    "phone”:”8439743294793",
+    "email":"test@abc.com"
+}

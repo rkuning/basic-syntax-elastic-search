@@ -1,0 +1,35 @@
+Elasticsearch Data Type :
+
+binary : data binary (wajib base64 encode string)
+boolean : true false
+date : tanggal & waktu sampai ms
+date_nanos : tanggal & waktu sampai ns
+ip : ipv4, ipv6
+keyword : text terstruktur (id, email, hostname, zipcode, dll)
+text : text
+version : data semantic version
+
+NUMBER
+
+long : 64bit integer
+integer : 32bit integer
+short : 16bit integer
+byte : 8bit integer
+double : 64bit floating point number
+float : 32bit floating point number
+half_float : setengah 16bit floating point number
+scaled_float : floating point number yang disimpan dalam long
+unsigned_long : 64bit integer
+
+RANGE
+
+integer_range : data jangkauan min & max dalam integer
+float_range : data jangkauan min & max dalam float
+long_range : data jangkauan min & max dalam long
+double_range : data jangkauan min & max dalam double
+date_range : data jangkauan min & max dalam date
+ip_range : data jangkauan min & max dalam ip
+
+ETC
+
+Geopoint, Geoshape, Point, Shape, Rank, Token, Completion
