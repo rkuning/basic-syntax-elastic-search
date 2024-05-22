@@ -1,0 +1,36 @@
+Elasticsearch menyimpan data dalam bentuk Apache Lucene Document, yakni tipe data dengan struktur seperti Map<String, List<T>>.
+Contoh : 
+
+elasticsearch : 
+{
+    "_id" : "1",
+    "name" : "Danang",
+    "age" : 24,
+    "hobbies" : ["coding", "reading"],
+    "contacts" : {
+        "phone" : "123123",
+        "email" : "danang@gmail.com"
+    },
+    "addresses" : [
+        {
+            "city" : "boyolali",
+            "country" : "indonesia"
+        },
+        {
+            "city" : "jakarta",
+            "country" : "indonesia"
+        }
+    ]
+}
+
+lucene :
+{
+    "_id" : ["1"],
+    "name" : ["Danang"],
+    "age" : [24],
+    "hobbies" : ["coding", "reading"],
+    "contacts.phone" : ["123123"],
+    "contacts.email" : ["danang@gmail.com"],
+    "addresses.city" : ["boyolali", "jakarta"]
+    "addresses.country" : ["indonesia"]
+}
